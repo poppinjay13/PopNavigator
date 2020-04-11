@@ -4,6 +4,11 @@
 An android navigation bar with animated transitions on menu items.
 The library is built to support [Adobe After Effects](http://www.adobe.com/products/aftereffects.html) animations exported as json using [Lottie](https://github.com/airbnb/lottie-android) to renders them natively on mobile while providing navigation functionality.
 
+## Screenshots
+
+![Demo GIF](https://media.giphy.com/media/gGqoXqSVyacidb5nUi/giphy.gif)
+
+
 ## Installation
 
 To add PopNavigator to your project:
@@ -26,6 +31,8 @@ dependencies {
  implementation 'com.github.poppinjay13:PopNavigator:$popNavigatorVersion'
 }
 ```
+Note that replacing `$popNavigatorVersion` with the code for the latest commit would work as well
+
 
 3.Syncing the project's gradle should allow you to use the library in your project.
 
@@ -45,10 +52,9 @@ In your activity:
 
 ```java
 PopNavigator popNavigator = findViewById(R.id.poppinjay13_navbar);
-popNavigator.addMenuItem(PopNavigator.HOME);
-popNavigator.addMenuItem(PopNavigator.MESSAGES);
-popNavigator.addMenuItem(PopNavigator.SETTINGS);
-popNavigator.addMenuItem(PopNavigator.PROFILE);
+popNavigator.addMenuItem(PopNavigator.BASE_EXPLORE);
+popNavigator.addMenuItem(PopNavigator.BASE_NOTIFY);
+popNavigator.addMenuItem(PopNavigator.BASE_USER);
 ```
 
 The package comes predefined with a few animations out of the box hence `PopNavigator.$name` provides the animation specified. 
@@ -73,6 +79,11 @@ The PopNavigator library is maintained and improved on nights and weekends and i
 
 Feel free to fork the repo and contribute, star and follow to stay updated on releases.
 
+## Releases
+
+Each release provides an apk to allow for installation and testing of the library on a basic basis. 
+
+The latest release can be found [here](https://github.com/poppinjay13/PopNavigator/releases/).
 ## License
 
    Licensed under the Apache License, Version 2.0 (the "License");
