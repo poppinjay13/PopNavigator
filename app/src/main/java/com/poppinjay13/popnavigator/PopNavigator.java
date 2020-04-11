@@ -28,17 +28,17 @@ public class PopNavigator extends LinearLayout {
      */
     public PopNavigator(Context context) {
         super(context);
-        context = context;
+        this.context = context;
     }
 
     public PopNavigator(Context context, AttributeSet attrs) {
         super(context, attrs);
-        context = context;
+        this.context = context;
     }
 
     public PopNavigator(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        context = context;
+        this.context = context;
     }
 
     /*
