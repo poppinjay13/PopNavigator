@@ -13,15 +13,36 @@ public class PopNavigator extends LinearLayout {
 
     Context context;
 
-    public static int HOME = R.raw.home;
-    public static int NOTIFICATIONS = R.raw.home;
-    public static int SETTINGS = R.raw.home;
-    public static int PROFILE = R.raw.mad;
-    public static int SPORT = R.raw.sport;
-    public static int PARTY = R.raw.party;
-    public static int MOVIE = R.raw.movie;
-    public static int FOOD = R.raw.food;
-    public static int EXERCISE = R.raw.exercise;
+    //available animations
+    public static int ECOM_BAG = R.raw.bag;
+    public static int ECOM_BANK = R.raw.bank;
+    public static int ECOM_CARD = R.raw.card;
+    public static int ECOM_CALENDAR = R.raw.calendar;
+    public static int ECOM_CHART = R.raw.chart;
+    public static int ECOM_DIAMOND = R.raw.diamond;
+    public static int ECOM_EXCHANGE = R.raw.exchange;
+    public static int ECOM_GAVEL = R.raw.gavel;
+    public static int ECOM_MOBILE = R.raw.mobile;
+    public static int ECOM_SETTING = R.raw.setting;
+    public static int ECOM_TAGS = R.raw.tags;
+    public static int ECOM_WALLET = R.raw.wallet;
+    //
+    public static int BASE_EXPLORE = R.raw.explore;
+    public static int BASE_USER = R.raw.user;
+    public static int BASE_NOTIFY = R.raw.notify;
+    //
+    public static int BLACK_UPDATE = R.raw.update;
+    public static int BLACK_STAR = R.raw.star;
+    public static int BLACK_EXPAND = R.raw.expand;
+    public static int BLACK_CLIP = R.raw.clip;
+    public static int BLACK_ATTACHMENT = R.raw.attachment;
+    public static int BLACK_OPTIONS = R.raw.options;
+    public static int BLACK_SLIDERS = R.raw.sliders;
+    public static int BLACK_BOOKMARK = R.raw.bookmark;
+    public static int BLACK_SCREENS = R.raw.screens;
+    public static int BLACK_EDIT = R.raw.edit;
+    public static int BLACK_FOLDER = R.raw.folder;
+    public static int BLACK_LIKE = R.raw.like;
 
     /*
     Constructors
@@ -116,7 +137,6 @@ public class PopNavigator extends LinearLayout {
      */
     public int getSelectedItemId() {
         final int childCount = this.getChildCount();
-        int item = 0;
         for (int i = 0; i < childCount; i++) {
             View view = this.getChildAt(i);
             if (view instanceof LottieAnimationView) {
