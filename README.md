@@ -99,4 +99,4 @@ The latest release can be found [here](https://github.com/poppinjay13/PopNavigat
    limitations under the License.
    
    
-Copyright 2020 [Ian Odundo](https:://poppinjay13.github.io)
+Copyright 2020 [Ian Odundo](https://poppinjay13.github.io)
